@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Raleway';
+  /* background-image: linear-gradient(to right, #2980b9, #6dd5fa); */
+}
+/* NavBar */
+.navBar{
+  width: 100%;
+  background-image: radial-gradient( #fff, #3813C2);
+  position:fixed;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.navList{
+  margin-left: 190px;
+  display: flex;
+  flex-direction: row;
+}
+.listItem{
+  list-style-type: none;
+  margin-right: 60px;
+}
+.listItem a{
+  color: black;
+  text-decoration: none;
+}
+.searchForm{
+  margin-left: 20px;
+}
+.filmClipsLink a{
+  font-family: 'Courgette' !important;
+  font-size: 45px;
+}
