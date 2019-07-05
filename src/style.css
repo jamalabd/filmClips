@@ -9,31 +9,73 @@
 /* NavBar */
 .navBar{
   width: 100%;
-  background-image: radial-gradient( #fff, #3813C2);
+  background-color: rgba(0,0,0,0);
   position:fixed;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 20px;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
 .navList{
-  margin-left: 190px;
   display: flex;
   flex-direction: row;
 }
 .listItem{
   list-style-type: none;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 .listItem a{
-  color: black;
+  font-size: 20px;
+  position: relative;
+  color: white;
   text-decoration: none;
+}
+.listItem a.b::after{
+  content: "";
+  height: 3px;
+  position: absolute;
+  background-color: #fff;
+  display: inline-block;
+  width: 0;
+  transition: all 0.4s;
+  top: 30px;
+  left: 0;
+}
+.listItem a.b:hover{
+  color: #fff;
+}
+.listItem a:hover:after{
+  width: 100%;
 }
 .searchForm{
   margin-left: 20px;
 }
-.filmClipsLink a{
+
+input.searchFeild{
+  border-radius: 10px;
+  border: 3px solid cyan;
+}
+.filmClipsLink a {
   font-family: 'Courgette' !important;
+  font-size: 45px;
+}
+.latestCarousel{
+  height: 800px;
+  width: 100%;
+}
+.latestCarousel img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+.billboard{
+  color: white;
+  width: 30%;
+  padding: 20px;
+  position: absolute;
+  top: 450px;
+}
+.billboardTitle{
   font-size: 45px;
 }

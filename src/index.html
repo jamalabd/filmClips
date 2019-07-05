@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Raleway&display=swap" rel="stylesheet">
     <title>Film Clips</title>
   </head>
@@ -11,19 +12,36 @@
     <nav class="navBar">
       <!-- Navigation list items -->
       <ul class="navList">
-        <li class="listItem homeLink"><a href="#">Home</a></li>
-        <li class="listItem movieLink"><a href="#">Movies</a></li>
-        <li class="listItem featuredLink"><a href="#">Featured</a></li>
+        <li class="listItem homeLink"><a class="b" href="#">Home</a></li>
+        <li class="listItem movieLink"><a class="b" href="#">Movies</a></li>
+        <li class="listItem featuredLink"><a class="b" href="#">Featured</a></li>
         <li class="listItem filmClipsLink"><a href="#">Film Clips</a></li>
-        <li class="listItem topShowsLink"><a href="#">Top Shows</a></li>
-        <li class="listItem tvLink"><a href="#">TV</a></li>
-        <li class="listItem discoverLink"><a href="#">Discover</a></li>
+        <li class="listItem topShowsLink"><a class="b" href="#">Top Shows</a></li>
+        <li class="listItem tvLink"><a class="b" href="#">TV</a></li>
+        <li class="listItem discoverLink"><a class="b" href="#">Discover</a></li>
       </ul>
       <!-- Navigation Search Bar -->
-      <!-- <form class="searchForm">
+      <form class="searchForm">
         <input class="searchFeild" type="text" placeholder="Search...">
-      </form> -->
+        <span>
+          <i class="fas fa-search"></i>
+
+        </span>
+      </form>
     </nav>
+    <!-- Carousel Section-->
+    <section class="latestCarousel">
+      <img src="./resources/1009588.jpg" alt="">
+      <header class="billboard">
+      <h5 class="billboardLat">LATEST</h5>
+      <h1 class="billboardTitle">Movie Title</h1>
+      <p class="billboardDisc">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English </p>
+      </header>
+    </section>
     <script src="../dist/bundle.js"></script>
+    <script src="https://use.fontawesome.com/78697cde8e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
