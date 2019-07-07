@@ -1,10 +1,12 @@
+/*jshint esversion: 8*/
+const path = require('path');
 module.exports = {
   // entry point
   entry: './src/controller/index.js',
 
   // output point
   output: {
-    path: __dirname + 'dist',
+    path: path.resolve('./dist'),
     filename:'bundle.js'
   },
   watch: true,

@@ -50,34 +50,42 @@
 }
 .searchForm{
   width: 0px;
-  height: 30px;
-  background: #41484a;
-  text-align: center;
-  line-height: 30px;
-  padding: 15px;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  margin-left: 20px;
+    height: 50px;
+    background: #41484a;
+    text-align: center;
+    line-height: 45px;
+    padding-right: 50px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.searchForm.active{
+  width: 250px;
+  padding-left: 25px;
   transition: all 0.5s ease;
 }
-.active{
-  width: 150px;
-  transition: all 0.5s ease;
+
+.searchFeild.active{
+  width: 98%;
+  padding-left: 5px;
+  transition: all 0.5s 0.8s ease;
 }
 .searchFeild{
-  width: 100%;
-  margin-right: 15px;
-  height: 20px;
-  border: 0;
-  border-bottom: 2px solid #fff;
-  background: transparent;
-  outline: none;
+border: 0px;
+border-bottom: 2px solid #fff;
+background: transparent;
+width: 0%;
+padding: 5px 0;
+outline: none;
+color: #fff;
+font-weight: bold;
+transition: all 0.3s ease;
 }
 input.searchFeild::placeholder{
   color: #fff;
 }
-.fa-search{
+.fa{
   cursor: pointer;
   color: #fff;
   position: absolute;
