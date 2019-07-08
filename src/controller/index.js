@@ -6,6 +6,8 @@ $(document).ready(function(){
   });
 });
 
-window.addEventListiner('scroll', ()=>{
-  document.getElementsByClassName('navBar').style.backgroundColor = "blue";
-});
+function navChange() {
+  document.getElementsByClassName('navBar').style.backgroundColor="black";
+  console.log('q');
+}
+window.addEventListener('scroll', navChange);
