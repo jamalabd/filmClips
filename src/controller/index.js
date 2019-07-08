@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 $(document).ready(function(){
   $(".fa-search").click(function(){
     $(".searchForm, .searchFeild").toggleClass('active');
@@ -5,5 +6,6 @@ $(document).ready(function(){
   });
 });
 
-
-console.log('ham');
+window.addEventListiner('scroll', ()=>{
+  document.getElementsByClassName('navBar').style.backgroundColor = "blue";
+});

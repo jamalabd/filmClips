@@ -49,20 +49,21 @@
   width: 100%;
 }
 .searchForm{
-  width: 0px;
-    height: 50px;
+    width: 0px;
+    height: 40px;
     background: #41484a;
     text-align: center;
-    line-height: 45px;
-    padding-right: 50px;
+    line-height: 25px;
+    padding-right: 40px;
     transition: all 0.5s ease;
     border-radius: 5px;
-    position: relative;
+    position: absolute;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    right: 90px;
 }
 .searchForm.active{
-  width: 250px;
-  padding-left: 25px;
+  width: 150px;
+  padding-left: 10px;
   transition: all 0.5s ease;
 }
 
@@ -72,15 +73,15 @@
   transition: all 0.5s 0.8s ease;
 }
 .searchFeild{
-border: 0px;
-border-bottom: 2px solid #fff;
-background: transparent;
-width: 0%;
-padding: 5px 0;
-outline: none;
-color: #fff;
-font-weight: bold;
-transition: all 0.3s ease;
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  width: 0%;
+  padding: 5px 0;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 input.searchFeild::placeholder{
   color: #fff;
@@ -89,8 +90,9 @@ input.searchFeild::placeholder{
   cursor: pointer;
   color: #fff;
   position: absolute;
-  top: 7px;
-  right: 7px;
+  top: 11px;
+  font-size: 22px;
+  right: 12px;
 }
 .filmClipsLink a {
   font-family: 'Courgette' !important;
