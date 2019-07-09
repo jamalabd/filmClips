@@ -12,13 +12,15 @@
   background-color: rgba(0,0,0,0);
   position:fixed;
   padding-top: 30px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   justify-content: center;
   display: flex;
   flex-direction: row;
+  transition: all .5s ease-out;
 }
 .navColor{
-  background-color: blue;
+  background-color: black;
+  transition: all .5s ease-in;
 }
 .navList{
   display: flex;
@@ -32,7 +34,6 @@
   font-size: 20px;
   position: relative;
   color: white;
-  text-decoration: none;
 }
 .listItem a.b::after{
   content: "";
@@ -45,8 +46,9 @@
   top: 30px;
   left: 0;
 }
-.listItem a.b:hover{
+.listItem a:hover{
   color: #fff;
+  text-decoration: none;
 }
 .listItem a:hover:after{
   width: 100%;
@@ -98,7 +100,7 @@ input.searchFeild::placeholder{
   right: 12px;
 }
 .filmClipsLink a {
-  font-family: 'Courgette' !important;
+  font-family: 'Courgette';
   font-size: 45px;
 }
 .latestCarousel{

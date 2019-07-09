@@ -2,7 +2,7 @@
 import * as view from '../view/view.js';
 // viewController
 const viewController =()=>{
-  view.expandingSearch();
+  view.navfunctions();
 };
 
 

@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _view_view_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view/view.js */ \"./src/view/view.js\");\n/*jshint esversion: 8 */\n // viewController\n\nvar viewController = function viewController() {\n  _view_view_js__WEBPACK_IMPORTED_MODULE_0__[\"expandingSearch\"]();\n};\n\nviewController();\n\n//# sourceURL=webpack:///./src/controller/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _view_view_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../view/view.js */ \"./src/view/view.js\");\n/*jshint esversion: 8 */\n // viewController\n\nvar viewController = function viewController() {\n  _view_view_js__WEBPACK_IMPORTED_MODULE_0__[\"navfunctions\"]();\n};\n\nviewController();\n\n//# sourceURL=webpack:///./src/controller/index.js?");
 
 /***/ }),
 
@@ -102,11 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _vie
 /*!**************************!*\
   !*** ./src/view/view.js ***!
   \**************************/
-/*! exports provided: expandingSearch */
+/*! exports provided: navfunctions */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"expandingSearch\", function() { return expandingSearch; });\n/*jshint esversion: 8 */\n// view jquery\nvar expandingSearch = function expandingSearch() {\n  $(document).ready(function () {\n    $(\".fa-search\").click(function () {\n      $(\".searchForm, .searchFeild\").toggleClass('active');\n      $(\".searchFeild[type='text']\").focus();\n    });\n  });\n};\n$(window).scroll(function () {\n  if ($(window).scrollTop > 300) {\n    $('navBar').addClass('navColor');\n  }\n});\n\n//# sourceURL=webpack:///./src/view/view.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navfunctions\", function() { return navfunctions; });\n/*jshint esversion: 8 */\nvar navfunctions = function navfunctions() {\n  $(document).ready(function () {\n    // expanding Search Bar\n    var searchExp = $(\".fa-search\").click(function () {\n      $(\".searchForm, .searchFeild\").toggleClass('active');\n      $(\".searchFeild[type='text']\").focus();\n    }); // navBar color change on scroll\n\n    var navColor = $(window).scroll(function () {\n      if ($(window).scrollTop() > 50) {\n        $('.navBar').addClass('navColor');\n      } else {\n        $('.navBar').removeClass('navColor');\n      }\n    });\n    return searchExp, navColor;\n  });\n};\n\n//# sourceURL=webpack:///./src/view/view.js?");
 
 /***/ })
 
