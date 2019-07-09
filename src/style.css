@@ -8,11 +8,12 @@
 }
 /* NavBar */
 .navBar{
+  z-index: 9999;
   width: 100%;
   background-color: rgba(0,0,0,0);
   position:fixed;
   padding-top: 30px;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
   justify-content: center;
   display: flex;
   flex-direction: row;
@@ -104,20 +105,24 @@ input.searchFeild::placeholder{
   font-size: 45px;
 }
 .latestCarousel{
-  height: 800px;
+  height: 850px ;
   width: 100%;
 }
-.latestCarousel img{
+#magicCarousel .carousel-item img{
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 850px;
+
 }
-.billboard{
+.carousel-caption{
   color: white;
-  width: 30%;
+  width: 25%;
   padding: 20px;
   position: absolute;
-  top: 450px;
+  bottom: 5px !important;
+  left:0% !important;
+  height: 300px;
+  text-align: left !important;
 }
 .billboardTitle{
   font-size: 45px;
