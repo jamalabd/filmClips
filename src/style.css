@@ -127,3 +127,33 @@ input.searchFeild::placeholder{
 .billboardTitle{
   font-size: 45px;
 }
+.col-xs-12{
+  /* width: 1000px; */
+  display: flex;
+  justify-content: center;
+}
+.container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.row img{
+  object-fit: cover;
+  height: 250px;
+  width: 155px;
+  border-radius: 7px;
+}
+.col-xs-4{
+  margin: 10px;
+  /* width: 100px; */
+}
+.carousel-control-left{
+  position: absolute;
+  bottom: 220px;
+  left: 10px;
+}
+.carousel-control-right{
+  position: absolute;
+  bottom: 220px;
+  right: 10px;
+}
