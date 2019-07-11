@@ -157,3 +157,9 @@ input.searchFeild::placeholder{
   bottom: 220px;
   right: 10px;
 }
+p.rating{
+  display: block;
+  background-color: black;
+  color: #fff;
+  width: 10%;
+}
