@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   font-family: 'Raleway';
-  /* background-image: linear-gradient(to right, #2980b9, #6dd5fa); */
 }
 /* NavBar */
 .navBar{
@@ -12,29 +11,33 @@
   width: 100%;
   background-color: rgba(0,0,0,0);
   position:fixed;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: center;
   display: flex;
   flex-direction: row;
   transition: all .5s ease-out;
 }
 .navColor{
-  background-color: black;
+  background-color: rgba(0,0,0,.55);
   transition: all .5s ease-in;
 }
 .navList{
   display: flex;
   flex-direction: row;
+  margin-bottom: 0px;
 }
 .listItem{
   list-style-type: none;
   margin-right: 40px;
 }
 .listItem a{
+  background: -webkit-linear-gradient(#F55555, #F05F57, #360940 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 20px;
   position: relative;
-  color: white;
+  /* color: white; */
 }
 .listItem a.b::after{
   content: "";
@@ -57,7 +60,7 @@
 .searchForm{
     width: 0px;
     height: 40px;
-    background: #41484a;
+    background: #3d3f3d;
     text-align: center;
     line-height: 25px;
     padding-right: 40px;
@@ -80,7 +83,7 @@
 }
 .searchFeild{
   border: 0px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #F0F0F0;
   background: transparent;
   width: 0%;
   padding: 5px 0;
@@ -90,7 +93,8 @@
   transition: all 0.3s ease;
 }
 input.searchFeild::placeholder{
-  color: #fff;
+  color: #F0F0F0;
+  font-size: 15px;
 }
 .fa{
   cursor: pointer;
@@ -99,6 +103,9 @@ input.searchFeild::placeholder{
   top: 11px;
   font-size: 22px;
   right: 12px;
+  background: -webkit-linear-gradient(#F55555, #F05F57, #360940 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .filmClipsLink a {
   font-family: 'Courgette';
@@ -107,7 +114,6 @@ input.searchFeild::placeholder{
 .latestCarousel{
   height: 850px ;
   width: 100%;
-  margin-bottom: 200px;
 }
 #magicCarousel .carousel-item img{
   object-fit: cover;
@@ -126,15 +132,35 @@ input.searchFeild::placeholder{
 }
 .billboardTitle{
   font-size: 45px;
+  font-0font-family: 'ALEGREYA SANS';
+}
+.popularMovies{
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,.55)inset;
+  padding-top: 100px;
+  background-image: linear-gradient(to bottom right, #f55555, #161130 50%);
+  color: #F0F0F0;
+}
+hr.hr {
+  border-radius: 100%;
+  height: 2px;
+  width: 800px;
+  border-color:#fff;
+  position: relative;
+  margin: 0px;
+  left: 25px;
 }
 .popularTitle{
-  margin-left: 160px;
+  margin-top: 80px;
+  margin-left: 230px;
+}
+.popularCarousel{
+  margin-top: 30px;
 }
 h5.title{
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .col-xs-12{
-  /* width: 1000px; */
   display: flex;
   justify-content: center;
 }
@@ -145,13 +171,18 @@ h5.title{
 }
 .row img{
   object-fit: cover;
-  height: 250px;
-  width: 155px;
+  height: 190px;
+  width: 130px;
   border-radius: 7px;
 }
 .col-xs-4{
   margin: 10px;
-  /* width: 100px; */
+  font-family: 'roboto';
+}
+.col-xs-4:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+  position: relative;
 }
 .carousel-control-left{
   position: absolute;
@@ -167,12 +198,13 @@ p.rating{
   display: block;
   background-color: black;
   color: #fff;
-  width: 5%;
-  position: absolute;
+  width: 40px;
+  margin: 1px;
+  position: relative;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 5px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  top: 30px;
+  bottom: 250px;
   background: rgba(0, 0, 0, 0.5);
 }
