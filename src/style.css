@@ -122,7 +122,7 @@ input.searchFeild::placeholder{
 }
 .carousel-caption{
   color: white;
-  width: 25%;
+  width: 30%;
   padding: 20px;
   position: absolute;
   bottom: 5px !important;
@@ -132,7 +132,7 @@ input.searchFeild::placeholder{
 }
 .billboardTitle{
   font-size: 45px;
-  font-0font-family: 'ALEGREYA SANS';
+  font-family: 'ALEGREYA SANS';
 }
 .popularMovies{
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,.55)inset;
@@ -207,4 +207,25 @@ p.rating{
   border-bottom-right-radius: 3px;
   bottom: 250px;
   background: rgba(0, 0, 0, 0.5);
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: black;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+footer h2{
+  font-family: 'Courgette';
+  color: #fff;
+}
+.footerNav li{
+  margin-bottom: 20px;
+}
+.copy{
+  position: relative;
+  bottom: -100px;
+  color: #d8dadb;
+  text-align: center;
 }
