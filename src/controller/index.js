@@ -7,3 +7,4 @@ const viewController =()=>{
 
 
 viewController();
+new WOW().init();

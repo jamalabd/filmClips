@@ -5,11 +5,14 @@
   padding: 0;
   font-family: 'Raleway';
 }
+body{
+  background-color: black;
+}
 /* NavBar */
 .navBar{
-  z-index: 9999;
+  z-index: 999;
   width: 100%;
-  background-color: rgba(0,0,0,0);
+  background-color:black;
   position:fixed;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -19,7 +22,7 @@
   transition: all .5s ease-out;
 }
 .navColor{
-  background-color: rgba(0,0,0,.55);
+  background-color: rgba(0,0,0,.60);
   transition: all .5s ease-in;
 }
 .navList{
@@ -32,12 +35,19 @@
   margin-right: 40px;
 }
 .listItem a{
-  background: -webkit-linear-gradient(#F55555, #F05F57, #360940 85%);
+  background: -webkit-linear-gradient(#F55555, #F05F57);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   position: relative;
-  /* color: white; */
+}
+.filmClipsLink a {
+  font-family: 'Courgette';
+  font-size: 45px;
+  color: #fff;
+  position: relative;
+  list-style-type: none;
+  margin-right: 40px;
 }
 .listItem a.b::after{
   content: "";
@@ -50,6 +60,10 @@
   top: 30px;
   left: 0;
 }
+.filmClipsLink a:hover{
+  color: #fff;
+  text-decoration: none;
+}
 .listItem a:hover{
   color: #fff;
   text-decoration: none;
@@ -60,7 +74,7 @@
 .searchForm{
     width: 0px;
     height: 40px;
-    background: #3d3f3d;
+    background: #f0f2f3;
     text-align: center;
     line-height: 25px;
     padding-right: 40px;
@@ -83,7 +97,7 @@
 }
 .searchFeild{
   border: 0px;
-  border-bottom: 2px solid #F0F0F0;
+  border-bottom: 2px solid #F05F57;
   background: transparent;
   width: 0%;
   padding: 5px 0;
@@ -93,7 +107,9 @@
   transition: all 0.3s ease;
 }
 input.searchFeild::placeholder{
-  color: #F0F0F0;
+  background: -webkit-linear-gradient(#F55555, #F05F57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 15px;
 }
 .fa{
@@ -103,22 +119,19 @@ input.searchFeild::placeholder{
   top: 11px;
   font-size: 22px;
   right: 12px;
-  background: -webkit-linear-gradient(#F55555, #F05F57, #360940 85%);
+  background: -webkit-linear-gradient(#F55555, #F05F57);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.filmClipsLink a {
-  font-family: 'Courgette';
-  font-size: 45px;
-}
 .latestCarousel{
-  height: 850px ;
+  padding-top: 85px;
+  height: 600px ;
   width: 100%;
 }
 #magicCarousel .carousel-item img{
   object-fit: cover;
   width: 100%;
-  height: 850px;
+  height: 600px;
 }
 .carousel-caption{
   color: white;

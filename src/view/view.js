@@ -8,14 +8,15 @@
       });
       // navBar color change on scroll
     const navColor = $(window).scroll(()=>{
-        if($(window).scrollTop()>50){
+        if($(window).scrollTop()>70){
           $('.navBar').addClass('navColor');
         }else{
           $('.navBar').removeClass('navColor');
         }
       });
 
-      return searchExp, navColor;
+
+    return searchExp, navColor;
 
 
 
